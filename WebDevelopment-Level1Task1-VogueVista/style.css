@@ -1,0 +1,168 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f8f8f8;
+}
+nav{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   position: sticky;
+   padding:20px 60px;
+   background-color: black;
+   top:0;
+   
+}
+nav ul{
+    display: flex;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+nav ul li a:hover{
+    color:goldenrod;
+}
+.hero{
+    height:90vh; 
+    background-image: url(https://img.freepik.com/free-photo/beautiful-casual-woman-fashion-set_1203-7833.jpg);
+    background-size: cover;
+    background-position: centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 60px;
+    margin-bottom:20px;
+}
+.hero-text p{
+    font-size: 20px;
+    width:700px;
+    max-width: 90%;
+    margin:auto;
+    margin-bottom: 30px;
+}
+.btn{
+    background-color: #d4af37;
+    color: black;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #b80b0b;
+}
+.collection{
+    
+    background-color: #f8f8f8;
+    padding:80px 10%;
+    text-align:center;
+
+}
+.collection h2{
+    font-size:40px;
+    margin-bottom:50px;
+
+}
+.cards{
+    display:flex;
+    justify-content: space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.card{
+    background: #f8f8f8;
+    width: 30%;
+    min-width:280px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+
+}
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+.card h3{
+    margin:20px 0 10px;
+
+}
+.card p{
+    padding:0 20px 20px;
+}
+.about{
+    padding:80px 10%;
+    text-align: center;
+}
+.about h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.about h2{
+    max-width:800px;
+    margin:auto;
+    font-size: 18px;
+    line-height:1.8;
+    color:#555;
+
+}
+footer{
+    background:#111;
+    color:white;
+    text-align: centre;
+    padding:40px 20px;
+}
+footer p{
+    margin: 10px 0;
+}
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+    nav ul{
+        margin: top 15px;
+        flex-direction:column;
+        gap:15px;
+
+    }
+    .hero-text h1{
+        font-size:40px;
+    }
+    .cards{
+        flex-direction:column;
+        align-items:centre;
+
+    }
+    .card{
+        width:90%;
+    }
+    .about p{
+        width:90%;
+    }
+}
